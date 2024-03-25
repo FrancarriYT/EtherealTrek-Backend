@@ -1,0 +1,1765 @@
+{
+	"info": {
+		"_postman_id": "bfda214a-9560-4fb3-9ef0-d077f917a022",
+		"name": "gestionEmpCli API",
+		"description": "Esta es la documentación oficial de la API de servicio de empleados y clientes y sus extras.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29391445"
+	},
+	"item": [
+		{
+			"name": "empleados",
+			"item": [
+				{
+					"name": "{param}",
+					"item": [
+						{
+							"name": "buscar",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/empleados/:param",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"empleados",
+										":param"
+									],
+									"variable": [
+										{
+											"key": "param",
+											"value": "+528782222222",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/empleados/:param",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"empleados",
+												":param"
+											],
+											"variable": [
+												{
+													"key": "param"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"cargo\": \"<string>\",\n  \"sueldo\": \"<double>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "editar",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"cargo\": \"<string>\",\n  \"sueldo\": \"<double>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/empleados/:param",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"empleados",
+										":param"
+									],
+									"variable": [
+										{
+											"key": "param",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"cargo\": \"<string>\",\n  \"sueldo\": \"<double>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/empleados/:param",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"empleados",
+												":param"
+											],
+											"variable": [
+												{
+													"key": "param"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"cargo\": \"<string>\",\n  \"sueldo\": \"<double>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "eliminar 1",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/empleados/:param",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"empleados",
+										":param"
+									],
+									"variable": [
+										{
+											"key": "param",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/empleados/:param",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"empleados",
+												":param"
+											],
+											"variable": [
+												{
+													"key": "param"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "password",
+					"item": [
+						{
+							"name": "{param}",
+							"item": [
+								{
+									"name": "cambiar Password",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/empleados/password/:param?password=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"empleados",
+												"password",
+												":param"
+											],
+											"query": [
+												{
+													"key": "password",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											],
+											"variable": [
+												{
+													"key": "param",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/empleados/password/:param?password=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"empleados",
+														"password",
+														":param"
+													],
+													"query": [
+														{
+															"key": "password",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													],
+													"variable": [
+														{
+															"key": "param"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"cargo\": \"<string>\",\n  \"sueldo\": \"<double>\"\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "cargos",
+					"item": [
+						{
+							"name": "cargos",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/empleados/cargos",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"empleados",
+										"cargos"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/empleados/cargos",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"empleados",
+												"cargos"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "[\n  \"VENDEDOR\",\n  \"VENDEDOR\"\n]"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "listar 1",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/empleados",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"empleados"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/empleados",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"empleados"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": \"<string>\",\n    \"nombre\": \"<string>\",\n    \"apellido\": \"<string>\",\n    \"dni\": \"<string>\",\n    \"fechaNac\": \"<string>\",\n    \"pais\": \"<string>\",\n    \"celular\": \"<string>\",\n    \"email\": \"<string>\",\n    \"direccion\": \"<string>\",\n    \"enabled\": \"<boolean>\",\n    \"codigoDeLlamada\": \"<string>\",\n    \"cargo\": \"<string>\",\n    \"sueldo\": \"<double>\"\n  },\n  {\n    \"id\": \"<string>\",\n    \"nombre\": \"<string>\",\n    \"apellido\": \"<string>\",\n    \"dni\": \"<string>\",\n    \"fechaNac\": \"<string>\",\n    \"pais\": \"<string>\",\n    \"celular\": \"<string>\",\n    \"email\": \"<string>\",\n    \"direccion\": \"<string>\",\n    \"enabled\": \"<boolean>\",\n    \"codigoDeLlamada\": \"<string>\",\n    \"cargo\": \"<string>\",\n    \"sueldo\": \"<double>\"\n  }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "clientes",
+			"item": [
+				{
+					"name": "{param}",
+					"item": [
+						{
+							"name": "buscar 1",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:param",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":param"
+									],
+									"variable": [
+										{
+											"key": "param",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:param",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":param"
+											],
+											"variable": [
+												{
+													"key": "param"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "editar 1",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:param",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":param"
+									],
+									"variable": [
+										{
+											"key": "param",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:param",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":param"
+											],
+											"variable": [
+												{
+													"key": "param"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "eliminar 2",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/clientes/:param",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes",
+										":param"
+									],
+									"variable": [
+										{
+											"key": "param",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/clientes/:param",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"clientes",
+												":param"
+											],
+											"variable": [
+												{
+													"key": "param"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "listar Clientes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/clientes",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"clientes"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/clientes",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"clientes"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": \"<string>\",\n    \"nombre\": \"<string>\",\n    \"apellido\": \"<string>\",\n    \"dni\": \"<string>\",\n    \"fechaNac\": \"<string>\",\n    \"pais\": \"<string>\",\n    \"celular\": \"<string>\",\n    \"email\": \"<string>\",\n    \"direccion\": \"<string>\",\n    \"enabled\": \"<boolean>\",\n    \"codigoDeLlamada\": \"<string>\"\n  },\n  {\n    \"id\": \"<string>\",\n    \"nombre\": \"<string>\",\n    \"apellido\": \"<string>\",\n    \"dni\": \"<string>\",\n    \"fechaNac\": \"<string>\",\n    \"pais\": \"<string>\",\n    \"celular\": \"<string>\",\n    \"email\": \"<string>\",\n    \"direccion\": \"<string>\",\n    \"enabled\": \"<boolean>\",\n    \"codigoDeLlamada\": \"<string>\"\n  }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "{param}",
+					"item": [
+						{
+							"name": "buscar Por Id Email Dni Celular",
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/auth/:param",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										":param"
+									],
+									"variable": [
+										{
+											"key": "param",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/auth/:param",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												":param"
+											],
+											"variable": [
+												{
+													"key": "param"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"roles\": [\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_USER\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_ADMIN\"\n    }\n  ],\n  \"pais\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"intentos\": \"<integer>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "editar 2",
+							"request": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"roles\": [\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_USER\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_ADMIN\"\n    }\n  ],\n  \"pais\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"intentos\": \"<integer>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/:param",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										":param"
+									],
+									"variable": [
+										{
+											"key": "param",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"roles\": [\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_USER\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_ADMIN\"\n    }\n  ],\n  \"pais\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"intentos\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/:param",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												":param"
+											],
+											"variable": [
+												{
+													"key": "param"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"roles\": [\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_USER\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_ADMIN\"\n    }\n  ],\n  \"pais\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"intentos\": \"<integer>\"\n}"
+								}
+							]
+						},
+						{
+							"name": "aliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/auth/:param",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										":param"
+									],
+									"variable": [
+										{
+											"key": "param",
+											"value": "<string>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/auth/:param",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												":param"
+											],
+											"variable": [
+												{
+													"key": "param"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "password",
+					"item": [
+						{
+							"name": "{param}",
+							"item": [
+								{
+									"name": "cambiar Password 1",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/auth/password/:param?password=<string>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"password",
+												":param"
+											],
+											"query": [
+												{
+													"key": "password",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											],
+											"variable": [
+												{
+													"key": "param",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/auth/password/:param?password=<string>",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"auth",
+														"password",
+														":param"
+													],
+													"query": [
+														{
+															"key": "password",
+															"value": "<string>",
+															"description": "(Required) "
+														}
+													],
+													"variable": [
+														{
+															"key": "param"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"roles\": [\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_USER\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_ADMIN\"\n    }\n  ],\n  \"pais\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"intentos\": \"<integer>\"\n}"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "empleado",
+					"item": [
+						{
+							"name": "registrar Empleado",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nombre\": \"michelle\",\n  \"apellido\": \"meza\",\n  \"email\": \"michellemeza@gmail.com\",\n  \"password\": \"123456\",\n  \"codigoDeLlamada\": \"+52\",\n  \"celular\": \"8781111111\",\n  \"dni\": \"98765\",\n  \"roles\": [\n    {\n      \"id\": 2\n    }\n  ],\n  \"pais\": \"mexico\",\n  \"enabled\": true,\n  \"intentos\": 0\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/empleado",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"empleado"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"roles\": [\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_USER\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_ADMIN\"\n    }\n  ],\n  \"pais\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"intentos\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/empleado",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"empleado"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"cargo\": \"<string>\",\n  \"sueldo\": \"<double>\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "cliente",
+					"item": [
+						{
+							"name": "registrar Cliente",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"nombre\": \"alfonso\",\n  \"apellido\": \"meza\",\n  \"email\": \"alfonsomeza73@gmail.com\",\n  \"codigoDeLlamada\": \"+52\",\n  \"celular\": \"8787912322\",\n  \"dni\": \"54321\",\n  \"roles\": [\n    {\n      \"id\": 1\n    }\n  ],\n  \"pais\": \"mexico\",\n  \"enabled\": true,\n  \"intentos\": 0\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/auth/cliente",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth",
+										"cliente"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "OK",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											},
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"codigoDeLlamada\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"roles\": [\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_USER\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"nombre\": \"ROLE_ADMIN\"\n    }\n  ],\n  \"pais\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"intentos\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/auth/cliente",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"auth",
+												"cliente"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "*/*"
+										}
+									],
+									"cookie": [],
+									"body": "{\n  \"id\": \"<string>\",\n  \"nombre\": \"<string>\",\n  \"apellido\": \"<string>\",\n  \"dni\": \"<string>\",\n  \"fechaNac\": \"<string>\",\n  \"pais\": \"<string>\",\n  \"celular\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"direccion\": \"<string>\",\n  \"enabled\": \"<boolean>\",\n  \"codigoDeLlamada\": \"<string>\"\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "listar 2",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/auth",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"auth"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/auth",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"auth"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": \"<string>\",\n    \"nombre\": \"<string>\",\n    \"apellido\": \"<string>\",\n    \"email\": \"<string>\",\n    \"password\": \"<string>\",\n    \"codigoDeLlamada\": \"<string>\",\n    \"celular\": \"<string>\",\n    \"dni\": \"<string>\",\n    \"roles\": [\n      {\n        \"id\": \"<long>\",\n        \"nombre\": \"ROLE_USER\"\n      },\n      {\n        \"id\": \"<long>\",\n        \"nombre\": \"ROLE_ADMIN\"\n      }\n    ],\n    \"pais\": \"<string>\",\n    \"enabled\": \"<boolean>\",\n    \"intentos\": \"<integer>\"\n  },\n  {\n    \"id\": \"<string>\",\n    \"nombre\": \"<string>\",\n    \"apellido\": \"<string>\",\n    \"email\": \"<string>\",\n    \"password\": \"<string>\",\n    \"codigoDeLlamada\": \"<string>\",\n    \"celular\": \"<string>\",\n    \"dni\": \"<string>\",\n    \"roles\": [\n      {\n        \"id\": \"<long>\",\n        \"nombre\": \"ROLE_USER\"\n      },\n      {\n        \"id\": \"<long>\",\n        \"nombre\": \"ROLE_USER\"\n      }\n    ],\n    \"pais\": \"<string>\",\n    \"enabled\": \"<boolean>\",\n    \"intentos\": \"<integer>\"\n  }\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "roles",
+			"item": [
+				{
+					"name": "{id}",
+					"item": [
+						{
+							"name": "eliminar",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/roles/:id",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"roles",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "<long>",
+											"description": "(Required) "
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "No Content",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/roles/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"roles",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id"
+												}
+											]
+										}
+									},
+									"status": "No Content",
+									"code": 204,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "listar",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/roles",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/roles",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"roles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  {\n    \"id\": \"<long>\",\n    \"nombre\": \"ROLE_ADMIN\"\n  },\n  {\n    \"id\": \"<long>\",\n    \"nombre\": \"ROLE_ADMIN\"\n  }\n]"
+						}
+					]
+				},
+				{
+					"name": "crear",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"id\": \"<long>\",\n  \"nombre\": \"ROLE_ADMIN\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/roles",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"roles"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"id\": \"<long>\",\n  \"nombre\": \"ROLE_ADMIN\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/roles",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"roles"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n  \"id\": \"<long>\",\n  \"nombre\": \"ROLE_ADMIN\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "paises",
+			"item": [
+				{
+					"name": "region",
+					"item": [
+						{
+							"name": "{region}",
+							"item": [
+								{
+									"name": "paises Por Region",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/paises/region/:region",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"paises",
+												"region",
+												":region"
+											],
+											"variable": [
+												{
+													"key": "region",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/paises/region/:region",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"paises",
+														"region",
+														":region"
+													],
+													"variable": [
+														{
+															"key": "region"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  \"<string>\",\n  \"<string>\"\n]"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "codigos-de-llamda",
+					"item": [
+						{
+							"name": "{pais}",
+							"item": [
+								{
+									"name": "codigos De Llamada",
+									"request": {
+										"method": "GET",
+										"header": [
+											{
+												"key": "Accept",
+												"value": "*/*"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/paises/codigos-de-llamda/:pais",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"paises",
+												"codigos-de-llamda",
+												":pais"
+											],
+											"variable": [
+												{
+													"key": "pais",
+													"value": "<string>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "OK",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "*/*"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/paises/codigos-de-llamda/:pais",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"paises",
+														"codigos-de-llamda",
+														":pais"
+													],
+													"variable": [
+														{
+															"key": "pais"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "*/*"
+												}
+											],
+											"cookie": [],
+											"body": "[\n  \"<string>\",\n  \"<string>\"\n]"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "buscar Todos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "*/*"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/paises",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"paises"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "OK",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "*/*"
+									}
+								],
+								"url": {
+									"raw": "{{baseUrl}}/paises",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"paises"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "text",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "*/*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n  \"<string>\",\n  \"<string>\"\n]"
+						}
+					]
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{token}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:8080/api/usuarios"
+		},
+		{
+			"key": "token",
+			"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJpcnZpbmdtZXphOTVAZ21haWwuY29tIiwic2NvcGUiOlsicmVhZCIsIndyaXRlIl0sImFwZWxsaWRvIjoibWV6YSIsImNvcnJlbyI6ImlydmluZ21lemE5NUBnbWFpbC5jb20iLCJleHAiOjE3MTEwNjUwMjIsIm5vbWJyZSI6ImlydmluZyIsImF1dGhvcml0aWVzIjpbIlJPTEVfQURNSU4iXSwianRpIjoiZmVkMTI1NGQtY2UwNy00NTMyLWE1YzEtNTM3NGE2M2FmYjQ0IiwiY2xpZW50X2lkIjoiZnJvbnRfYXBwIn0.O2o3Z7-ckmJTzF-hW5O_ZeH4PFREk0Y1GJgAkSxrlMQ",
+			"type": "string"
+		}
+	]
+}
